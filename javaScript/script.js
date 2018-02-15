@@ -17,5 +17,7 @@
         num--;
       }
     });
+        
+        console.log("alma");
   
       }

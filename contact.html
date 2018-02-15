@@ -12,6 +12,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>    
     
     <script src="javaScript/script.js" type="text/javascript"></script>
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <title>Hello, world!</title> 
   </head> 
   
@@ -63,6 +65,11 @@
       a:hover {
         text-decoration: none;
         color: inherit;
+      }
+      
+      @font-face {
+        font-family: clip;
+        src: url("fonts/clip.regular.ttf");
       }
     </style>
     
@@ -286,8 +293,8 @@
     </style>
     
     <div class="row justify-content-center mt-5">
-      <div class="col-12 col-md-4"><p class="menu-btn"><a href="rolunk.html">Rólunk</a></p></div>            
-      <div class="col-12 col-md-4 mb-0 pb-0"><p class="menu-btn termekek">Termékek</p>
+      <div class="col-12 col-md-3"><p class="menu-btn"><a href="rolunk.html">Rólunk</a></p></div>            
+      <div class="col-12 col-md-3 mb-0 pb-0"><p class="menu-btn termekek">Termékek</p>
         <div class="col-12 termek">      
           <div class="row justify-content-center mt-0 mb-3">
             <div class="col-6 col-md-12 col-innermenu pt-3 mt-0">
@@ -301,8 +308,8 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-3"><p class="menu-btn contact"><a href="gallery.html">Galéria</a></p></div>
-      <div class="col-12 col-md-4"><p class="menu-btn contact"><a href="contact.html">Kapcsolat</a></p></div>
+      <div class="col-12 col-md-3"><p class="menu-btn"><a href="gallery.html">Galéria</a></p></div>
+      <div class="col-12 col-md-3"><p class="menu-btn menu-btn-active"><a href="contact.html">Kapcsolat</a></p></div>
     </div>
     
     <style>
@@ -325,32 +332,75 @@
         -webkit-animation-iteration-count: infinite;   
       }
     </style>
-
-    <!-- -----------------------------------------------main slide------------------------------------------------------- -->
     
-    <style>      
+    <!-- ------------------------------------------------------contact--------------------------------------------- -->
+    
+    <style>
+      .about-container {
+        background: rgba(0,0,0,.5);
+        border-radius: 4rem;
+      }
       
-      .col-img {
-        text-align: center;
-        margin-bottom: 3rem;
-        margin-top: 1rem;
+      .contactTitle {
+        color: aquamarine;
+        text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 20px blue, 0 0 33px blue;
+        font-family: neon;
+        font-size: 1.3rem;
       }
-       
-      .main-pics {
-        border-radius: 2rem;
-        box-shadow: 0 0 1px white, 0 0 2px white, 0 0 3px white, 0 0 4px white, 0 0 5px white, 0 0 10px orange, 0 0 20px orange, 0 0 33px orange, 0 0 45px orange;
-        max-height: 400px;
+      
+      .address {
+        color: aquamarine;
+        text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 20px blue, 0 0 33px blue;
+        font-family: neon;    
+        display: inline;
       }
-  
-    </style>
+      
+      .contact {
+        color: white;
+        font-family: neon;
+        margin: 0;
+      }
+      
+      .name {
+        color: aquamarine;
+        font-size: 1.5rem;
+        text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 20px blue, 0 0 33px blue;
+        margin-bottom: 0;
+      }
+ </style>
     
-    <div class="row justify-content-center m-5 row-img">
-      <div class="col-10 col-img col-pic1">
-          <img src="assets/ice-cream.jpg" alt="" class="img-fluid main-pics">
+    <div class="row justify-content-center mt-5 mb-5">
+      <div class="col-10 about-container p-5">
+         <p class="contactTitle">DECORLIGHT KFT.</p>
+        <br>
+    
+        <p class="address">Cím: </p>
+  
+        <p class="contact">Gyál-Felsőpakony Iparterület</p>
+    
+        <p class="address">Web: </p>
+    
+        <p class="contact"><a class="web" href="index.html">www.decolight.hu</a></p>
+        <br>
+    
+        <p class="name">Hallgass Mihály</p>
+        <br>
+    
+        <p class="contact"><i class="fas fa-phone"></i> 06-70-608-7748 </p>
+    
+        <p class="contact"><i class="fas fa-envelope"></i><a class="mail"> info@decorlight.hu</a></p>
+        <br>
+  
+        <p class="name">Hallgass Vendel</p>
+        <br>
+    
+        <p class="contact icons"><i class="fas fa-phone"></i> 06-70-608-7750 </p>
+    
+        <p class="contact icons"><i class="fas fa-envelope"></i><a class="mail"> info@decorlight.hu</a></p>
       </div>
     </div>
     
-    <!-- footer -->
+    <!-- -----------------------------------------------------footer----------------------------------------------- -->
     
     <style>
       

@@ -64,6 +64,11 @@
         text-decoration: none;
         color: inherit;
       }
+      
+      @font-face {
+        font-family: clip;
+        src: url("fonts/clip.regular.ttf");
+      }
     </style>
     
     <!-- ---------------------------------------------------------------------flags---------------------------------------------------- -->
@@ -286,8 +291,8 @@
     </style>
     
     <div class="row justify-content-center mt-5">
-      <div class="col-12 col-md-4"><p class="menu-btn"><a href="rolunk.html">Rólunk</a></p></div>            
-      <div class="col-12 col-md-4 mb-0 pb-0"><p class="menu-btn termekek">Termékek</p>
+      <div class="col-12 col-md-3"><p class="menu-btn menu-btn-active"><a href="rolunk.html">Rólunk</a></p></div>            
+      <div class="col-12 col-md-3 mb-0 pb-0"><p class="menu-btn termekek">Termékek</p>
         <div class="col-12 termek">      
           <div class="row justify-content-center mt-0 mb-3">
             <div class="col-6 col-md-12 col-innermenu pt-3 mt-0">
@@ -301,8 +306,8 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-3"><p class="menu-btn contact"><a href="gallery.html">Galéria</a></p></div>
-      <div class="col-12 col-md-4"><p class="menu-btn contact"><a href="contact.html">Kapcsolat</a></p></div>
+      <div class="col-12 col-md-3"><p class="menu-btn"><a href="gallery.html">Galéria</a></p></div>
+      <div class="col-12 col-md-3"><p class="menu-btn contact"><a href="contact.html">Kapcsolat</a></p></div>
     </div>
     
     <style>
@@ -325,32 +330,79 @@
         -webkit-animation-iteration-count: infinite;   
       }
     </style>
-
-    <!-- -----------------------------------------------main slide------------------------------------------------------- -->
     
-    <style>      
+    <!-- -----------------------------------------------------Rolunk---------------------------------------------- -->
+    
+    <style>
+      .about-container {
+        background: rgba(0,0,0,.5);
+        border-radius: 4rem;
+      }
       
-      .col-img {
-        text-align: center;
-        margin-bottom: 3rem;
-        margin-top: 1rem;
+      .firstLine {
+        color: white;
+        font-weight: 600;
+        font-family: neon;
+        font-size: 1.2rem;
+        padding: 0;
       }
-       
-      .main-pics {
-        border-radius: 2rem;
-        box-shadow: 0 0 1px white, 0 0 2px white, 0 0 3px white, 0 0 4px white, 0 0 5px white, 0 0 10px orange, 0 0 20px orange, 0 0 33px orange, 0 0 45px orange;
-        max-height: 400px;
+      
+      .li {
+        font-family: neon;
+        padding: 0;
+        margin: 0;
+        color: aquamarine;
+        text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 20px blue, 0 0 33px blue;
       }
-  
+      
+      .ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 1rem 3rem;
+      }
+      
+      .about {
+        color: white;
+        font-family: neon;
+      }
     </style>
     
-    <div class="row justify-content-center m-5 row-img">
-      <div class="col-10 col-img col-pic1">
-          <img src="assets/ice-cream.jpg" alt="" class="img-fluid main-pics">
+    <div class="row justify-content-center mt-5 mb-5">
+      <div class="col-10 about-container p-5">
+        <p class="about firstLine">Üvegtechnikai tapasztalatunkkal, munkáinkkal már lassan 20 éve segítjük, erősítjük különböző cégek gyártási tevékenységét.</p>
+    
+        <ul class="ul">
+      
+          <li><p class="li">Neongyártás</p></li>
+          <li><p class="li">Lámpagyártás</p></li>
+          <li><p class="li">Fém-üveg kötés</p></li>
+          <li><p class="li">Laboreszközök, hőmérők</p></li>
+          <li><p class="li">Különböző dísztárgyak készítése</p></li>
+    
+        </ul>
+  
+        <p class="about">20 év után a cégeknél szerzett tapasztalatok alapján mára már időszerűvé vált egy saját, önálló cég megalakítása, melyet Decorlight néven 2009-ben alapítottunk. <br><br>
+        Főként üvegműves munkákat vállalunk, de például reklámok komplett készítését is vállaljuk a tervezéstől a végső kivitelezésig.</p>
+        
+        <ul class="ul">
+      
+          <li><p class="li">Felmérés, tervezés</p></li>
+          <li><p class="li">Látványterv készítése</p></li>
+          <li><p class="li">Hordozógyártás</p></li>
+          <li><p class="li">Szerelés</p></li>
+          
+        </ul>
+    
+        <p class="about">
+          Az általunk méretezett és készített reklámokra 2 év garanciát is bátran vállalunk, mert tudjuk, hogy a felhasznált nyersanyagok jó minőségűek, illetve a gyártás kellő odafigyeléssel készült.<br>
+          Így akár 10-15 évig is működőképesek lehetnek reklámjaink.<br><br>
+          Előre is köszönjük, ha megtisztel bizalmával!<br>
+          Hallgas Mihály és Hallgas Vendel</p>
+    
       </div>
     </div>
-    
-    <!-- footer -->
+
+    <!-- -----------------------------------------------------footer----------------------------------------------- -->
     
     <style>
       
