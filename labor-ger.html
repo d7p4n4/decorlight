@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
     <!-- font fam -->
     <link href="https://fonts.googleapis.com/css?family=Baloo|Bungee+Inline|Cabin+Sketch|Monoton|Share+Tech+Mono|Space+Mono|Zilla+Slab+Highlight" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Play|Playfair+Display" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>    
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <title>Hello, world!</title> 
+    <title>Decorlight</title> 
   </head> 
   
   <body> 
@@ -46,13 +48,17 @@
       }
       
       body {
-        background-image: url("assets/backg.jpg");
-        background-size: cover;
-        background-position: center center;
+        background-color: rgb(20,20,20);
         padding: 0;
         margin: 0;
         width: 100%;
         height: 100%;
+      }
+      
+      header {
+        background: rgba(0,0,0,.5);
+        padding-bottom: 2rem;
+        margin-top: -1rem;
       }
       
       a {
@@ -64,10 +70,17 @@
         text-decoration: none;
         color: inherit;
       }
+      
+      @font-face {
+        font-family: clip;
+        src: url("fonts/clip.regular.ttf");
+      }
     </style>
     
     <!-- ---------------------------------------------------------------------flags---------------------------------------------------- -->
     
+    <header>
+     
       <style>
 .flag {
   width: 100%;
@@ -86,6 +99,32 @@
   border-radius: 99999px;
   box-shadow: 0 0 3px red, 0 0 7px red, 0 0 15px red, 0 0 25px red;
 }
+        
+        .yellow {
+          background: yellow;
+                    margin-top: .25rem;
+  width: 100%;
+  height: 0.5rem;
+  border-radius: 99999px;
+  box-shadow: 0 0 3px yellow, 0 0 7px yellow, 0 0 15px yellow, 0 0 25px yellow;
+        }
+        
+        .red {
+            background: red;
+  width: 100%;
+  height: 0.5rem;
+  border-radius: 99999px;
+  margin-top: 0.25rem;
+  box-shadow: 0 0 3px red, 0 0 7px red, 0 0 15px red, 0 0 25px red;
+        }
+        
+        .black {
+  height: 0.5rem;
+  background: rgb(50,50,50);
+  border-radius: 99999px;
+  box-shadow: 0 0 3px rgb(70,70,70), 0 0 7px rgb(85,85,85), 0 0 15px rgb(100,100,100), 0 0 25px grey;
+        }
+        
 .germanWhite, .hunWhite {
   background: white;
   width: 100%;
@@ -111,9 +150,9 @@
         <div class="col-3 col-sm-2 col-lg-2 col-xl-1 p-4">
           <div class="flag german">
             <a href="index-ger.html">
-              <div class="upperRed"></div>
-              <div class="germanWhite"></div>
-              <div class="lowerRed"></div>
+              <div class="black"></div>
+              <div class="red"></div>
+              <div class="yellow"></div>
             </a>
           </div>
         </div> 
@@ -128,6 +167,7 @@
         </div>    
       </div>
     </div>
+    
     
     <!-- -------------------------------------------------------header------------------------------------------------- -->
     
@@ -179,7 +219,7 @@
       }
       
       .lower-title {
-        font-family: neon;
+        font-family: clip;
         font-size: 2rem;
         text-align: center;
         color: darkgray;
@@ -200,6 +240,8 @@
     <div class="row justify-content-center align-items-center">
       <div class="col-12"><p class="lower-title">A napnál is világosabb</p></div>
     </div>
+      
+    </header>
     
     <!-- --------------------------------------------------------------navbar---------------------------------------------------------- -->
     
@@ -210,7 +252,7 @@
       }
       
       .menu-btn {
-        font-family: clip;
+        font-family: neon;
         color: dimgray;
         font-size: 2rem;
         text-align: center;
@@ -270,6 +312,8 @@
         color: dimgray;
         font-family: neon;
         cursor: pointer;
+        font-size: 1.3rem;
+        list-style: none;
       }
       
       .innermenu:hover {
@@ -411,7 +455,7 @@
       <div class="col-10 col-lg-5 col-neon-slide p-5 m-2 pb-0">
         <img class="img-fluid" src="assets/laborreferencia/labor5.jpg" alt="">
         <div class="row justify-content-center mt-4">
-          <div class="col-auto"><p class="gallery-path"><i class="fas fa-images"></i> További képek a <a class="gallery-link" href="gallery-ger.html">galériában</a>.</p></div>
+          <div class="col-auto"><p class="gallery-path"><i class="fas fa-images"></i> Weitere Bilder in <a class="gallery-link" href="gallery-ger.html">der Galerie</a>.</p></div>
         </div>
       </div>
     </div>
@@ -456,7 +500,7 @@
     </style>
     
     <div class="row row-footer justify-content-center align-items-center p-3 pb-0 m-0 mt-5">
-      <div class="col-12 mb-2"><p class="footer-text">Copyright © 2018. Decorlight Kft. All rifhts reserved. Hallgas Vendel 06-70-608-7750, Hallgas Mihály 06-70-608-7748 Email: info@decorlight.hu</p></div>
+      <div class="col-12 mb-2"><p class="footer-text">Copyright © <span id="year"></span>. Decorlight Kft. All rifhts reserved. Hallgas Vendel 06-70-608-7750, Hallgas Mihály 06-70-608-7748 Email: info@decorlight.hu</p></div>
       <div class="col-12"><p class="footer-text">Made by <a class="footer-link" href="" target="_blank">Zsombor Bérces</a>.</p></div>
     </div>
     
@@ -491,6 +535,11 @@
         num--;
       }
     });
+
+        var currentYear = (new Date).getFullYear();
+        $(document).ready(function() {
+        $("#year").text( (new Date).getFullYear() );
+        });
       }
     </script>
   </body> 
