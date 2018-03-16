@@ -18,39 +18,15 @@
 
     <style>
       html {
-        font-size: 13px;
+        font-size: 16px;
         padding: 0;
         margin: 0;
         width: 100%;
       }
       
-      @media (min-width: 576px) {
-        html {
-          font-size: 15px;
-        }
-      }
-      
-      @media (min-width: 768px) {
-        html {
-          font-size: 17px;
-        }
-      }
-      
       @media (min-width: 992px) {
         html {
-          font-size: 19.5px;
-        }
-      }
-      
-      @media (min-width: 1200px) {
-        html {
-          font-size: 22px;
-        }
-      }
-      
-      @media (min-width: 1440px) {
-        html {
-          font-size: 25px;
+          font-size: 18px;
         }
       }
     
@@ -100,6 +76,8 @@
         border-radius: 50%;
         width: 100%;
         max-width: 2rem;
+        position: relative;
+        left: calc(50% - 1rem);
       }
       
       .de-flag,
@@ -108,8 +86,13 @@
         transition: all .3s ease;
       }
       
+      .hun-flag {
+        transition: all .3s ease;
+      }
+      
       .de-flag:hover,
-      .en-flag:hover {
+      .en-flag:hover,
+      .hun-flag:hover {
         opacity: 1;
         cursor: pointer;
         transform: scale(1.1);
@@ -146,7 +129,7 @@
       
       .main-title {
         font-family: Monoton;
-        font-size: 3rem;
+        font-size: 2.5rem;
         -webkit-animation-name: turnonlights;
         -webkit-animation-duration: 30s;
         -webkit-animation-fill-mode: both;
@@ -163,7 +146,7 @@
       
       .lower-title {
         font-family: clip;
-        font-size: 1.25rem;
+        font-size: 1rem;
         text-align: center;
         color: darkgray;
         font-weight: bold;
@@ -242,6 +225,8 @@
         font-family: neon;
         cursor: pointer;
         font-size: 1.3rem;
+        border-bottom: .025rem solid rgba(255,255,255,.15);
+        margin-bottom: .5rem;
       }
       
       .innermenu:hover {
@@ -314,6 +299,17 @@
       
       .row {
         margin-right: 0px;
+        margin-left: 0;
+      }
+
+      @media (min-width: 992px) {
+        .main-title {
+          font-size: 3rem;
+        }
+        
+        .lower-title {
+          font-size: 1.5rem;
+        }
       }
     </style>
   </head>
@@ -357,14 +353,14 @@
     <div class="row justify-content-center mt-5">
       <div class="col-12 col-md-3"><p class="menu-btn"><a href="rolunk.html">Rólunk</a></p></div>            
       <div class="col-12 col-md-3 mb-0 pb-0"><p class="menu-btn termekek">Termékek</p>
-        <div class="col-12 termek">      
+        <div class="col-12 termek p-0">      
           <div class="row justify-content-center mt-0 mb-3">
-            <div class="col-6 col-md-12 col-innermenu pt-3 mt-0">
+            <div class="col-8 col-md-12 col-innermenu pt-3 mt-0">
               <ul class="ul"> 
                 <li class="innermenu"><a href="neon.html">Neon</a></li>
                 <li class="innermenu"><a href="labor.html">Labor</a></li>
                 <li class="innermenu"><a href="diszek.html">Dísztárgyak</a></li>
-                <li class="innermenu"><a href="reklam.html">Reklámtáblák</a></li>
+                <li class="innermenu"><a href="reklamtablak.html">Reklámtáblák</a></li>
               </ul>
             </div>
           </div>
@@ -381,7 +377,7 @@
     </div>
     
     <div class="row row-footer justify-content-center align-items-center p-3 pb-0 m-0 mt-5">
-      <div class="col-12 mb-2"><p class="footer-text">Copyright © <span id="year"></span>. Decorlight Kft. All rifhts reserved. Hallgas Vendel 06-70-608-7750, Hallgas Mihály 06-70-608-7748 Email: info@decorlight.hu</p></div>
+      <div class="col-12 mb-2"><p class="footer-text">Copyright © <span id="year"></span>. Decorlight Kft. All rights reserved.</p></div>
       <div class="col-12"><p class="footer-text">Made by <a class="footer-link" href="" target="_blank">Zsombor Bérces</a>.</p></div>
     </div>
 

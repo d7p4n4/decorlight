@@ -1,5 +1,5 @@
 <!doctype html> 
-<html lang="en">
+<html lang="hu">
   <head>
     <!-- Required meta tags --> 
     <meta charset="utf-8"> 
@@ -14,37 +14,30 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>    
     
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <title>Decorlight</title> 
-  </head> 
-  
-  <body> 
-    
-    <!-- main styles -->
+    <title>Üveg laboerszközök, laborkellékek gyártásával is foglalkozunk. Tökéletes minőségű, precíz, pontos méretezéssel készítjük üvegtechnikai termékeinket.</title> 
 
     <style>
-      
       html {
-        font-size: 10px;
+        font-size: 16px;
         padding: 0;
         margin: 0;
+        width: 100%;
       }
       
-      @media (min-width: 420px) {
-        html {
-          font-size: 13px;
-        }
-      }
-      
-      @media (min-width: 768px) {
-        html {
-          font-size: 16px;
-        }
-      }
-      
-      @media (min-width: 1200px) {
+      @media (min-width: 992px) {
         html {
           font-size: 18px;
         }
+      }
+    
+     a {
+        text-decoration: none;
+        color: inherit;
+      }
+      
+      a:hover {
+        text-decoration: none;
+        color: inherit;
       }
       
       body {
@@ -53,12 +46,13 @@
         margin: 0;
         width: 100%;
         height: 100%;
+        background-image: repeating-linear-gradient(-55deg, rgb(0,0,0), rgb(0,0,0) -5px, rgb(20,20,20) .5px, rgb(20,20,20) 50px);
       }
       
       header {
         background: rgba(0,0,0,.5);
         padding-bottom: 2rem;
-        margin-top: -1rem;
+        margin-top: -1.5rem;
       }
       
       a {
@@ -75,102 +69,35 @@
         font-family: clip;
         src: url("fonts/clip.regular.ttf");
       }
-    </style>
-    
-    <!-- ---------------------------------------------------------------------flags---------------------------------------------------- -->
-   
-     <header>
-    
-      <style>
-.flag {
-  width: 100%;
-  height: 3.6rem;
-}
-        .german {
-  filter: opacity(.5);
-}
-.german:hover {
-  filter: opacity(1);
-}
-.upperRed, .hunRed {
-  background: red;
-  width: 100%;
-  height: 0.5rem;
-  border-radius: 99999px;
-  box-shadow: 0 0 3px red, 0 0 7px red, 0 0 15px red, 0 0 25px red;
-}
-        
-        .yellow {
-          background: yellow;
-                    margin-top: .25rem;
-  width: 100%;
-  height: 0.5rem;
-  border-radius: 99999px;
-  box-shadow: 0 0 3px yellow, 0 0 7px yellow, 0 0 15px yellow, 0 0 25px yellow;
-        }
-        
-        .red {
-            background: red;
-  width: 100%;
-  height: 0.5rem;
-  border-radius: 99999px;
-  margin-top: 0.25rem;
-  box-shadow: 0 0 3px red, 0 0 7px red, 0 0 15px red, 0 0 25px red;
-        }
-        
-        .black {
-  height: 0.5rem;
-  background: rgb(50,50,50);
-  border-radius: 99999px;
-  box-shadow: 0 0 3px rgb(70,70,70), 0 0 7px rgb(85,85,85), 0 0 15px rgb(100,100,100), 0 0 25px grey;
-        }
-        
-.germanWhite, .hunWhite {
-  background: white;
-  width: 100%;
-  height: 0.5rem;
-  margin-top: 0.25rem;
-  border-radius: 99999px;
-  box-shadow: 0 0 3px white, 0 0 7px white, 0 0 15px white, 0 0 25px white;
-}
-.lowerRed, .green {
-  margin-top: .25rem;
-  height: 0.5rem;
-  background: red;
-  border-radius: 99999px;
-  box-shadow: 0 0 3px red, 0 0 7px red, 0 0 15px red, 0 0 25px red;
-}
-.green {
-  background: green;
-  box-shadow: 0 0 3px green, 0 0 7px green, 0 0 15px green, 0 0 25px green;
-}
-      </style>
       
-      <div class="row justify-content-left mt-3 ml-2">
-        <div class="col-3 col-sm-2 col-lg-2 col-xl-1 p-4">
-          <div class="flag german">
-            <a href="index-ger.html">
-              <div class="black"></div>
-              <div class="red"></div>
-              <div class="yellow"></div>
-            </a>
-          </div>
-        </div> 
-    
-      <div class="col-3 col-sm-2 col-lg-2 col-xl-1 p-4">
-        <div class="flag hungarian">
-          <a href="index.html">
-            <div class="hunRed"></div>
-            <div class="hunWhite"></div>
-            <div class="green"></div>
-          </a>
-        </div>    
-      </div>
-    </div>
-    
-    <!-- -------------------------------------------------------header------------------------------------------------- -->
-    
-    <style>
+      .de-flag,
+      .en-flag,
+      .hun-flag {
+        border-radius: 50%;
+        width: 100%;
+        max-width: 2rem;
+        position: relative;
+        left: calc(50% - 1rem);
+      }
+      
+      .de-flag,
+      .en-flag {
+        opacity: .5;
+        transition: all .3s ease;
+      }
+      
+      .hun-flag {
+        transition: all .3s ease;
+      }
+      
+      .de-flag:hover,
+      .en-flag:hover,
+      .hun-flag:hover {
+        opacity: 1;
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+      
       @-webkit-keyframes turnonlights {
         0%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
         .1%        { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 17px orange, 0 0 38px orange, 0 0 50px orange, 0 0 70px orange}
@@ -202,7 +129,7 @@
       
       .main-title {
         font-family: Monoton;
-        font-size: 4rem;
+        font-size: 2.5rem;
         -webkit-animation-name: turnonlights;
         -webkit-animation-duration: 30s;
         -webkit-animation-fill-mode: both;
@@ -219,7 +146,7 @@
       
       .lower-title {
         font-family: clip;
-        font-size: 1.5rem;
+        font-size: 1rem;
         text-align: center;
         color: darkgray;
         font-weight: bold;
@@ -230,21 +157,8 @@
       
       .row-title {
         margin-top: -1rem;
-      }
-    </style>
-    
-    <div class="row row-title justify-content-center align-items-center">
-      <div class="col-12"><p class="main-title">Decorlight</p></div>
-    </div>
-    
-    <div class="row justify-content-center align-items-center">
-      <div class="col-12"><p class="lower-title">A napnál is világosabb</p></div>
-    </div>
+      }   
       
-    </header>
-    <!-- --------------------------------------------------------------navbar---------------------------------------------------------- -->
-    
-    <style>
       @font-face {
         font-family: clip;
         src: url("fonts/clip.regular.ttf");
@@ -296,15 +210,15 @@
         -webkit-animation-iteration-count: infinite;
       }
       
-      .col-innermenu {
-        background-color: rgba(0,0,0,.5);
-        border-radius: 0 0 1rem 1rem;
+      .ul {
+        padding: 0;
       }
       
       .termek {
         margin-top: -.5rem;
         margin-bottom: .75rem;
         display: none;
+        text-align: center;
       }
       
       .innermenu {
@@ -312,6 +226,8 @@
         font-family: neon;
         cursor: pointer;
         font-size: 1.3rem;
+        border-bottom: .025rem solid rgba(255,255,255,.15);
+        margin-bottom: .5rem;
       }
       
       .innermenu:hover {
@@ -328,62 +244,12 @@
       
       .termek-active {
         display: block;
-      }
-    </style>
-    
-    <div class="row justify-content-center mt-5">
-      <div class="col-12 col-md-3"><p class="menu-btn"><a href="rolunk.html">Rólunk</a></p></div>            
-      <div class="col-12 col-md-3 mb-0 pb-0"><p class="menu-btn menu-btn-active termekek">Termékek</p>
-        <div class="col-12 termek">      
-          <div class="row justify-content-center mt-0 mb-3">
-            <div class="col-6 col-md-12 col-innermenu pt-3 mt-0">
-              <ul> 
-                <li class="innermenu"><a href="neon.html">Neon</a></li>
-                <li class="innermenu"><a href="labor.html">Labor</a></li>
-                <li class="innermenu"><a href="disz.html">Dísztárgyak</a></li>
-                <li class="innermenu"><a href="tabla.html">Reklámtáblák</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-3"><p class="menu-btn"><a href="gallery.html">Galéria</a></p></div>
-      <div class="col-12 col-md-3"><p class="menu-btn contact"><a href="contact.html">Kapcsolat</a></p></div>
-    </div>
-    
-    <style>
+      }  
+
       .col-innermenu {
         background-color: rgba(0,0,0,.5);
         border-radius: 0 0 1rem 1rem;
-      }
-      
-      .innermenu {
-        color: dimgray;
-        font-family: neon;
-        cursor: pointer;
-      }
-      
-      .innermenu:hover {
-        -webkit-animation-name: turnonlightsblue;
-        -webkit-animation-duration: 18s;
-        -webkit-animation-fill-mode: both;
-        -webkit-animation-timing-function: steps(2, start);
-        -webkit-animation-iteration-count: infinite;   
-      }
-    </style>
-    
-    
-    <!-- -------------------------------------------------------------neon--------------------------------------------------- -->
-    
-    <style>
-      .col-neon {
-        background: rgba(0,0,0,.5);
-        border-radius: 4rem;
-      }
-      
-      .col-neon-slide {
-        background: rgba(0,0,0,.5);
-        border-radius: 4rem;
+        padding: 0 1rem 0 1rem;
       }
       
       .laborTitle {
@@ -397,9 +263,10 @@
       .laborText, .gallery-path {
         color: white;
         font-family: play;
+        line-height: 1.3rem;
       }
       
-      .img-fluid {
+      .img-bemutato {
         border-radius: 2rem;
         border: .1rem solid aquamarine;
       }
@@ -415,7 +282,7 @@
       
       .li {
         font-family: neon;
-        padding: 0;
+        padding-left: 2rem;
         margin: 0;
         color: aquamarine;
         text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 20px blue, 0 0 33px blue;
@@ -424,46 +291,8 @@
       .ul {
         list-style: none;
         padding: 0;
-        margin: 0 0 1rem 3rem;
       }
-      
-    </style>
-    
-    <div class="row mt-5 mb-5 justify-content-center">
-      <div class="col-10 col-lg-5 col-neon p-5 m-2">
-        <p class="laborTitle">Labor termékek</p>
-    
-        <p class="laborText">A laborokban használatos és nélkülözhetetlen üvegtechnikai termékek és egyéb speciális területen szükséges eszközök gyártása (pl. borászat, gombatermesztés, sörgyártás, stb. területén) 
-        <br><br>
-        Különböző laboreszközök gyártása: </p>
-    
-        <ul class="ul">
-      
-          <li><p class="li">pipetták</p></li>
-          <li><p class="li">buretták</p></li>
-          <li><p class="li">hűtők</p></li>
-          <li><p class="li">hőmérők</p></li>
-          <li><p class="li">fokolók</p></li>
-          <li><p class="li">stb</p></li>
-    
-        </ul>
-    
-        <p class="laborText">
-         Emellett fém-üveg kötés, vákuumtechnikai termékek, egyedi lámpák, -lámpatestek készítését vállaljuk akár kvarccsőből is. </p>
 
-      </div>
-      <div class="col-10 col-lg-5 col-neon-slide p-5 m-2 pb-0">
-        <img class="img-fluid" src="assets/laborreferencia/labor5.jpg" alt="">
-        <div class="row justify-content-center mt-4">
-          <div class="col-auto"><p class="gallery-path"><i class="fas fa-images"></i> További képek a <a class="gallery-link" href="gallery.html">galériában</a>.</p></div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- --------------------------------------------------------------footer------------------------------------------------------------------- -->
-    
-    <style>
-      
       .row-footer {
         background: rgba(0,0,0,.5);
         position: relative;
@@ -497,16 +326,113 @@
         -webkit-animation-iteration-count: infinite;        
         text-decoration: none;
       }
+      
+      .row {
+        margin-right: 0px;
+        margin-left: 0;
+      }
+
+      @media (min-width: 992px) {
+        .main-title {
+          font-size: 3rem;
+        }
+        
+        .lower-title {
+          font-size: 1.5rem;
+        }
+        
+        .laaborText {
+          line-height: 1.6rem;
+        }
+      }
     </style>
+  </head>
+  
+  <body>
+   
+     <header>
+   
+      <div class="row justify-content-start mt-4 ml-2 mb-4"> 
+        <div class="col-1 p-1">
+          <a href="index.html">
+            <img class="img-fluid hun-flag" src="assets/flag-hun.png" alt="magyar zászló" />
+          </a>
+        </div>
+        
+        <div class="col-1 p-1">
+          <a href="de/menu.html">
+            <img class="img-fluid de-flag" src="assets/flag-de.png" alt="német zászló" />
+          </a>
+        </div> 
+
+        <div class="col-1 p-1">
+          <a href="en/menu.html">
+            <img class="img-fluid en-flag" src="assets/flag-en.png" alt="angol zászló" />
+          </a>
+        </div>
+      </div>
     
-    <div class="row row-footer justify-content-center align-items-center p-3 pb-0 m-0 mt-5">
-      <div class="col-12 mb-2"><p class="footer-text">Copyright © <span id="year"></span>. Decorlight Kft. All rifhts reserved. Hallgas Vendel 06-70-608-7750, Hallgas Mihály 06-70-608-7748 Email: info@decorlight.hu</p></div>
-      <div class="col-12"><p class="footer-text">Made by <a class="footer-link" href="" target="_blank">Zsombor Bérces</a>.</p></div>
+    <div class="row row-title justify-content-center align-items-center">
+      <div class="col-12"><p class="main-title">Decorlight</p></div>
     </div>
     
+    <div class="row justify-content-center align-items-center">
+      <div class="col-12"><p class="lower-title">A napnál is világosabb</p></div>
+    </div>
+      
+    </header>
     
+    <div class="row justify-content-center mt-5">
+      <div class="col-12 col-md-3"><p class="menu-btn"><a href="rolunk.html">Rólunk</a></p></div>            
+      <div class="col-12 col-md-3 mb-0 pb-0"><p class="menu-btn menu-btn-active termekek">Termékek</p>
+        <div class="col-12 termek p-0">      
+          <div class="row justify-content-center mt-0 mb-3">
+            <div class="col-6 col-md-12 col-innermenu pt-3 mt-0">
+              <ul class="ul"> 
+                <li class="innermenu"><a href="neon.html">Neon</a></li>
+                <li class="innermenu"><a href="labor.html">Labor</a></li>
+                <li class="innermenu"><a href="diszek.html">Dísztárgyak</a></li>
+                <li class="innermenu"><a href="reklamtabla.html">Reklámtáblák</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3"><p class="menu-btn"><a href="galeria.html">Galéria</a></p></div>
+      <div class="col-12 col-md-3"><p class="menu-btn contact"><a href="kapcsolat.html">Kapcsolat</a></p></div>
+    </div>
     
+    <div class="row mt-5 mb-5 justify-content-center">
+      <div class="col-11 col-lg-5 m-2">
+        <h1 class="laborTitle pb-3">Labor termékek</h1>
+        <p class="laborText">A laborokban használatos és nélkülözhetetlen üvegtechnikai termékek és egyéb speciális területen szükséges eszközök gyártása (pl. borászat, gombatermesztés, sörgyártás, stb. területén) 
+        <br><br>
+        Különböző laboreszközök gyártása: </p>
     
+        <ul class="ul">
+          <li><p class="li">pipetták</p></li>
+          <li><p class="li">buretták</p></li>
+          <li><p class="li">hűtők</p></li>
+          <li><p class="li">hőmérők</p></li>
+          <li><p class="li">fokolók</p></li>
+          <li><p class="li">stb</p></li>
+        </ul>
+        <p class="laborText">
+         Emellett fém-üveg kötés, vákuumtechnikai termékek, egyedi lámpák, -lámpatestek készítését vállaljuk akár kvarccsőből is. </p>
+
+      </div>
+      <div class="col-10 col-lg-5 m-2 pb-0 pt-0 align-self-center" style="text-align: center;">
+        <img class="img-fluid img-bemutato" src="assets/laborreferencia/labor-eszkozok-02.jpg" alt="üvegtechnikai labor eszközök">
+        <div class="row justify-content-center mt-4">
+          <div class="col-auto"><p class="gallery-path"><i class="fas fa-images"></i> További képek a <a class="gallery-link" href="gallery.html">galériában</a>.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-footer justify-content-center align-items-center p-3 pb-0 m-0 mt-5">
+      <div class="col-12 mb-2"><p class="footer-text">Copyright © <span id="year"></span>. Decorlight Kft. All rights reserved.</p></div>
+      <div class="col-12"><p class="footer-text">Made by <a class="footer-link" href="" target="_blank">Zsombor Bérces</a>.</p></div>
+    </div>
     
     <!-- Optional JavaScript --> 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
