@@ -1,0 +1,792 @@
+<!doctype html> 
+<html lang="hu">
+  <head>
+    <!-- Required meta tags --> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    <!-- Bootstrap CSS --> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+    <!-- font fam -->
+    <link href="https://fonts.googleapis.com/css?family=Baloo|Bungee+Inline|Cabin+Sketch|Monoton|Share+Tech+Mono|Space+Mono|Zilla+Slab+Highlight" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Play|Playfair+Display" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>    
+    
+    <script src="javaScript/script.js" type="text/javascript"></script>
+    <title>Üdvözöljük! Ha igazán ízléses, neon reklámra vágyik, ha üzletét szeretné ragyogóvá, az éjszaka fényévé tenni, válasszon minket. Minőségi neon reklámokat, feliratokat, logókat, cégéreket készítünk kedvező áron. Hozza vissza a 80-as évek lenyűgöző neon fényeit, reklámjait, és rendeljen tőlünk. Decorlight, minden, ami neon.</title>
+
+    <style>
+      html {
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+      }
+      
+      @media (min-width: 992px) {
+        html {
+          font-size: 18px;
+        }
+      }
+    
+     a {
+        text-decoration: none;
+        color: inherit;
+      }
+      
+      a:hover {
+        text-decoration: none;
+        color: inherit;
+      }
+      
+      body {
+        background-color: rgb(20,20,20);
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background-image: repeating-linear-gradient(-55deg, rgb(0,0,0), rgb(0,0,0) -5px, rgb(20,20,20) .5px, rgb(20,20,20) 50px);
+      }
+      
+      header {
+        background: rgba(0,0,0,.5);
+        padding-bottom: 2rem;
+        margin-top: -1.5rem;
+      }
+      
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      
+      a:hover {
+        text-decoration: none;
+        color: inherit;
+      }
+      
+      @font-face {
+        font-family: clip;
+        src: url("fonts/clip.regular.ttf");
+      }
+      
+      .de-flag,
+      .en-flag,
+      .hun-flag {
+        border-radius: 50%;
+        width: 100%;
+        max-width: 2rem;
+        position: relative;
+        left: calc(50% - 1rem);
+      }
+      
+      .de-flag,
+      .en-flag {
+        opacity: .5;
+        transition: all .3s ease;
+      }
+      
+      .hun-flag {
+        transition: all .3s ease;
+      }
+      
+      .de-flag:hover,
+      .en-flag:hover,
+      .hun-flag:hover {
+        opacity: 1;
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+      
+      @-webkit-keyframes turnonlights {
+        0%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+        .1%        { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 17px orange, 0 0 38px orange, 0 0 50px orange, 0 0 70px orange}
+        .4%        { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 17px orange, 0 0 38px orange,  0 0 50px orange, 0 0 70px orange}
+        .7%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+        .8%        { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 17px orange, 0 0 38px orange, 0 0 50px orange, 0 0 70px orange}
+        1.2%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+        2.2%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+        2.3%       { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 15px orange, 0 0 20px orange, 0 0 30px orange, 0 0 40px orange, 0 0 55px orange, 0 0 80px orange; }
+        2.6%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+        2.8%        { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 17px orange, 0 0 38px orange, 0 0 50px orange, 0 0 70px orange, 0 0 55px orange, 0 0 80px orange; }
+        3.4%        { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 15px orange, 0 0 20px orange, 0 0 30px orange, 0 0 40px orange; }
+        3.6%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+        4.2%        { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 17px orange, 0 0 38px orange, 0 0 50px orange, 0 0 70px orange}
+        5.5%       { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 15px orange, 0 0 20px orange, 0 0 30px orange, 0 0 40px orange, 0 0 55px orange, 0 0 80px orange; ; }
+        6.0%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+        6.3%        { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 15px orange, 0 0 20px orange, 0 0 30px orange, 0 0 40px orange, 0 0 55px orange, 0 0 80px orange; ; }
+        6.7%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+        7.2%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+        7.3%        { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 17px orange, 0 0 38px orange, 0 0 50px orange, 0 0 70px orange}
+        7.6%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+        7.8%        { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 17px orange, 0 0 38px orange, 0 0 50px orange, 0 0 70px orange}
+        8.4%       { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 15px orange, 0 0 20px orange, 0 0 30px orange, 0 0 40px orange, 0 0 55px orange, 0 0 80px orange; }
+        8.6%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+        9.6%    { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 17px orange, 0 0 38px orange, 0 0 50px orange, 0 0 70px orange}
+        10%    { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 15px orange, 0 0 20px orange, 0 0 30px orange, 0 0 40px orange, 0 0 55px orange, 0 0 80px orange; }
+        100%    { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 15px orange, 0 0 20px orange, 0 0 30px orange, 0 0 40px orange, 0 0 55px orange, 0 0 80px orange; }
+    }
+      
+      .main-title {
+        font-family: Monoton;
+        font-size: 2.5rem;
+        -webkit-animation-name: turnonlights;
+        -webkit-animation-duration: 30s;
+        -webkit-animation-fill-mode: both;
+        -webkit-animation-timing-function: steps(2, start);
+        -webkit-animation-iteration-count: infinite;
+        text-align: center;
+        cursor: default;
+      }
+      
+      @font-face {
+        font-family: neon;
+        src: url("fonts/Neon.ttf");
+      }
+      
+      .lower-title {
+        font-family: clip;
+        font-size: 1rem;
+        text-align: center;
+        color: darkgray;
+        font-weight: bold;
+        margin-top: -.5rem;
+        margin-bottom: .5rem;
+        cursor: default;
+      }
+      
+      .row-title {
+        margin-top: -1rem;
+      }   
+      
+      @font-face {
+        font-family: clip;
+        src: url("fonts/clip.regular.ttf");
+      }
+      
+      .menu-btn {
+        font-family: neon;
+        color: dimgray;
+        font-weight: 700;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: -1rem;
+        cursor: pointer;
+      }
+      
+      @-webkit-keyframes turnonlightsblue {
+        0%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+        .2%        { color: white; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 17px blue, 0 0 38px blue; }
+        .8%        { color: white; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 17px blue, 0 0 38px blue; }
+        1.4%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+        1.6%        { color: white; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 17px blue, 0 0 38px blue; }
+        2.4%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+        4.4%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+        4.6%        { color: white; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue, 0 0 20px blue, 0 0 30px blue, 0 0 40px blue; }
+        5.2%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+        5.6%        { color: white; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue, 0 0 20px blue, 0 0 30px blue, 0 0 40px blue; }
+        6.8%        { color: white; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 17px blue, 0 0 38px blue; }
+        7.2%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+        8.4%        { color: white; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 17px blue, 0 0 38px blue; }
+        8.6%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+        9.6%        { color: white; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 17px blue, 0 0 38px blue; }
+        10%           {color: white; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 17px blue, 0 0 38px blue, 0 0 50px blue, 0 0 70px blue; }
+        100%        {color: white; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 17px blue, 0 0 38px blue, 0 0 50px blue, 0 0 70px blue;}
+      }
+      
+      .menu-btn:hover {
+        -webkit-animation-name: turnonlightsblue;
+        -webkit-animation-duration: 18s;
+        -webkit-animation-fill-mode: both;
+        -webkit-animation-timing-function: steps(2, start);
+        -webkit-animation-iteration-count: infinite;
+      }
+      
+      .menu-btn-active {
+        -webkit-animation-name: turnonlightsblue;
+        -webkit-animation-duration: 18s;
+        -webkit-animation-fill-mode: both;
+        -webkit-animation-timing-function: steps(2, start);
+        -webkit-animation-iteration-count: infinite;
+      }
+      
+      .ul {
+        padding: 0;
+      }
+      
+      .termek {
+        margin-top: -.5rem;
+        margin-bottom: .75rem;
+        display: none;
+        text-align: center;
+      }
+      
+      .innermenu {
+        color: dimgray;
+        font-family: neon;
+        cursor: pointer;
+        font-size: 1.3rem;
+        border-bottom: .025rem solid rgba(255,255,255,.15);
+        margin-bottom: .5rem;
+      }
+      
+      .innermenu:hover {
+        -webkit-animation-name: turnonlightsblue;
+        -webkit-animation-duration: 18s;
+        -webkit-animation-fill-mode: both;
+        -webkit-animation-timing-function: steps(2, start);
+        -webkit-animation-iteration-count: infinite;   
+      }
+      
+      .innermenu {
+        list-style: none;
+      }
+      
+      .termek-active {
+        display: block;
+      }  
+
+      .col-innermenu {
+        background-color: rgba(0,0,0,.5);
+        border-radius: 0 0 1rem 1rem;
+        padding: 0 1rem 0 1rem;
+      }
+      
+      .col-img {
+        text-align: center;
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+      }
+       
+      .main-pics {
+        border-radius: 2rem;
+        max-height: 400px;
+        border: .1rem solid aquamarine;
+      }
+
+      .row-footer {
+        background: rgba(0,0,0,.5);
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+      }
+      
+      .footer-text {
+        color: white;
+        font-family: neon;
+        font-size: .8rem;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        cursor: default;
+      }
+      
+      .footer-link {
+        color: dimgray;
+        padding: 0;
+        margin: 0;
+        margin-top: 0.5rem;
+      }
+      
+      .footer-link:hover {
+        -webkit-animation-name: turnonlightsblue;
+        -webkit-animation-duration: 18s;
+        -webkit-animation-fill-mode: both;
+        -webkit-animation-timing-function: steps(2, start);
+        -webkit-animation-iteration-count: infinite;        
+        text-decoration: none;
+      }
+      
+      svg {
+        position: relative;
+        top: 1rem;
+        padding: 2rem;
+        width: 80%;
+        left: 10%;        
+        margin-bottom: 0rem;
+      }
+      
+      @media (min-width: 528px) {
+        svg {
+          width: 60%;
+          left: 20%;
+        }
+      }
+      
+      @media (min-width: 992px) {
+        svg {
+          width: 40%;
+          left: 30%;
+        }
+      }
+      
+      @keyframes ellipse01 {
+        0%, 100% {transform: scale(1); opacity: .8;}
+        50% {transform: scale(.95); opacity: 1;}
+      }
+      
+      .ellipse01 {
+        animation-name: ellipse01;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        transform-origin: 50% 50%;
+      }
+      
+      @keyframes ellipse02 {
+        0%. 100% {transform: scale(1); opacity: .7;}
+        50% {transform: scale(1.05); opacity: .9;}
+      }
+      
+      .ellipse02 {
+        animation-name: ellipse02;
+        animation-duration: 3.5s;
+        animation-delay: 1.5s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        transform-origin: 50% 50%;
+      }
+
+      @keyframes ellipse03 {
+        0%. 100% {transform: scale(.95); opacity: .9;}
+        50% {transform: scale(1); opacity: .6;}
+      }
+      
+      .ellipse03 {
+        animation-name: ellipse03;
+        animation-duration: 4s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        transform-origin: 50% 50%;
+      }
+
+      @keyframes ellipse04 {
+        0%. 100% {transform: scale(.9); opacity: .85;}
+        50% {transform: scale(1); opacity: 1;}
+      }
+      
+      .ellipse04 {
+        animation-name: ellipse02;
+        animation-duration: 2.5s;
+        animation-delay: .5s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        transform-origin: 50% 50%;
+      }
+
+      @keyframes ellipse05 {
+        0%. 100% {transform: scale(1); opacity: .7;}
+        50% {transform: scale(1.05); opacity: .9;}
+      }
+      
+      .ellipse05 {
+        animation-name: ellipse05;
+        animation-duration: 3.5s;
+        animation-delay: .75s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        transform-origin: 50% 50%;
+      }
+
+      @keyframes ellipse06 {
+        0%. 100% {transform: scale(.9); opacity: .9;}
+        50% {transform: scale(.95); opacity: .75;}
+      }
+      
+      .ellipse06 {
+        animation-name: ellipse06;
+        animation-duration: 6s;
+        animation-delay: 1.75s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        transform-origin: 50% 50%;
+      }
+
+      @keyframes ellipse07 {
+        0%. 100% {transform: scale(1); opacity: .85;}
+        50% {transform: scale(1.05); opacity: .7;}
+      }
+      
+      .ellipse07 {
+        animation-name: ellipse07;
+        animation-duration: 3s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        transform-origin: 50% 50%;
+      }
+
+      @keyframes ellipse08 {
+        0%. 100% {transform: scale(1); opacity: .75;}
+        50% {transform: scale(.9); opacity: .85;}
+      }
+      
+      .ellipse08 {
+        animation-name: ellipse08;
+        animation-duration: 4s;
+        animation-delay: 1.25s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        transform-origin: 50% 50%;
+        z-index: 10;
+      }
+
+      @keyframes ellipse09 {
+        0%. 100% {transform: scale(1.05); opacity: 1;}
+        50% {transform: scale(.95); opacity: .9;}
+      }
+      
+      .ellipse09 {
+        animation-name: ellipse09;
+        animation-duration: 5s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        transform-origin: 50% 50%;
+      }
+
+      @keyframes ellipse10 {
+        0%. 100% {transform: scale(.95); opacity: .9;}
+        50% {transform: scale(.9); opacity: .75;}
+      }
+      
+      .ellipse10 {
+        animation-name: ellipse10;
+        animation-duration: 3.5s;
+        animation-delay: .5s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        transform-origin: 50% 50%;
+      }
+
+      @keyframes ellipse11 {
+        0%. 100% {transform: scale(1); opacity: .95;}
+        50% {transform: scale(1.05); opacity: .8;}
+      }
+      
+      .ellipse11 {
+        animation-name: ellipse11;
+        animation-duration: 5s;
+        animation-delay: .25s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        transform-origin: 50% 50%;
+      }
+
+      @keyframes ellipse12 {
+        0%. 100% {transform: scale(.9); opacity: .75;}
+        50% {transform: scale(1); opacity: .9;}
+      }
+      
+      .ellipse12 {
+        animation-name: ellipse12;
+        animation-duration: 3s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        transform-origin: 50% 50%;
+        z-index: 10;
+      }
+
+      @keyframes ellipse13 {
+        0%. 100% {transform: scale(1); opacity: .85;}
+        50% {transform: scale(.9); opacity: .95;}
+      }
+      
+      .ellipse13 {
+        animation-name: ellipse13;
+        animation-duration: 4.25s;
+        animation-delay: .75s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        transform-origin: 50% 50%;
+        z-index: 10;
+      }
+
+      @keyframes ellipse14 {
+        0%. 100% {transform: scale(1); opacity: .95;}
+        50% {transform: scale(1.05); opacity: .8;}
+      }
+      
+      .ellipse14 {
+        animation-name: ellipse14;
+        animation-duration: 5.25s;
+        animation-delay: .5s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        transform-origin: 50% 50%;
+      }
+      
+      @keyframes ellipse15 {
+        0%. 100% {transform: scale(.9); opacity: .7;}
+        50% {transform: scale(1.05); opacity: .85;}
+      }
+      
+      .ellipse15 {
+        animation-name: ellipse15;
+        animation-duration: 6s;
+        animation-delay: 1.5s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        transform-origin: 50% 50%;
+      }
+
+      @keyframes ellipse16 {
+        0%. 100% {transform: scale(.85); opacity: .85;}
+        50% {transform: scale(.95); opacity: .9;}
+      }
+      
+      .ellipse16 {
+        animation-name: ellipse16;
+        animation-duration: 3.5s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        transform-origin: 50% 50%;
+      }
+
+      @keyframes ellipse17 {
+        0%. 100% {transform: scale(1); opacity: .95;}
+        50% {transform: scale(1.05); opacity: .8;}
+      }
+      
+      .ellipse17 {
+        animation-name: ellipse17;
+        animation-duration: 3s;
+        animation-delay: .25s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        transform-origin: 50% 50%;
+      }
+      
+      .svg-vader {
+        position: absolute;
+        top: -2rem;
+        padding: 3rem;
+        z-index: 1;
+      }
+      
+      .slogan {
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: neon;
+        text-transform: uppercase;
+        letter-spacing: .5rem;
+        color: rgb(170,170,170);
+        text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px white;
+      }
+      
+      .little-slogan {
+        text-align: center;
+        font-size: 1rem;
+        color: rgb(170,170,170);
+        font-family: neon;
+        font-weight: 600;
+      }
+      
+      @media (min-width: 528px) {
+        .slogan {
+          font-size: 2rem;
+        }
+        
+        .little-slogan {
+          font-size: 1.25rem;
+        }
+      }
+      
+      @media (min-width: 992px) {
+        .slogan {
+          font-size: 2.5rem;
+        }
+        
+        .little-slogan {
+          font-size: 1.5rem;
+        }
+      }
+      
+      .row {
+        margin-right: 0px;
+        margin-left: 0;
+      }
+
+      @media (min-width: 992px) {
+        .main-title {
+          font-size: 3rem;
+        }
+        
+        .lower-title {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  
+  <body>
+    
+    <header>
+      
+      <div class="row justify-content-start mt-4 ml-2 mb-4"> 
+        <div class="col-1 p-1">
+          <a href="index.html">
+            <img class="img-fluid hun-flag" src="assets/flag-hun.png" alt="magyar zászló" />
+          </a>
+        </div>
+        
+        <div class="col-1 p-1">
+          <a href="de/menu.html">
+            <img class="img-fluid de-flag" src="assets/flag-de.png" alt="német zászló" />
+          </a>
+        </div> 
+
+        <div class="col-1 p-1">
+          <a href="en/menu.html">
+            <img class="img-fluid en-flag" src="assets/flag-en.png" alt="angol zászló" />
+          </a>
+        </div>
+    </div>
+
+    <div class="row row-title justify-content-center align-items-center">
+      <div class="col-12"><p class="main-title">Decorlight</p></div>
+    </div>
+    
+    <div class="row justify-content-center align-items-center">
+      <div class="col-12"><p class="lower-title">A napnál is világosabb</p></div>
+    </div>
+      
+    </header>
+
+    </style>
+    
+    <div class="row justify-content-center mt-5">
+      <div class="col-12 col-md-3"><p class="menu-btn"><a href="rolunk.html">Rólunk</a></p></div>            
+      <div class="col-12 col-md-3 mb-0 pb-0"><p class="menu-btn termekek">Termékek</p>
+        <div class="col-12 termek p-0">      
+          <div class="row justify-content-center mt-0 mb-3">
+            <div class="col-8 col-md-12 col-innermenu pt-3 mt-0">
+              <ul class="ul"> 
+                <li class="innermenu"><a href="neon.html">Neon</a></li>
+                <li class="innermenu"><a href="labor.html">Labor</a></li>
+                <li class="innermenu"><a href="diszek.html">Dísztárgyak</a></li>
+                <li class="innermenu"><a href="reklamtablak.html">Reklámtáblák</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3"><p class="menu-btn"><a href="galeria.html">Galéria</a></p></div>
+      <div class="col-12 col-md-3"><p class="menu-btn contact"><a href="kapcsolat.html">Kapcsolat</a></p></div>
+    </div>
+
+    <div class="vader-wrap">
+    
+    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 419 263.75">
+      <defs>
+    <style>.cls-1,.cls-4{stroke:#fff;fill: none;stroke-width:4px;stroke-linecap:round;}
+      .cls-1,.cls-2,.cls-3{stroke-miterlimit:10;}
+      .cls-2{fill:#000;}
+      .cls-3{fill:#fff;stroke-linecap:round;stroke-width: 0;}
+      .cls-5{fill:#666;}
+      .cls-6{fill:red;}
+      .cls-7{fill:#e6e6e6;}
+      .cls-10 {fill:rgb(150,150,150);}
+      .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18 {fill:none;stroke-linecap:round;}
+      .cls-11, .cls-12, .cls-13 {stroke-width: 20px;opacity: .15; stroke: rgb(255,35,35);}
+      .cls-12 {stroke-width: 15px;opacity: .2;}
+      .cls-13 {stroke-width: 13px;opacity: .3;}
+      .cls-14, .cls-15, .cls-16 {stroke-width:10px;opacity: .35;stroke:rgb(255,100,100);}
+      .cls-15 {stroke-width:8px;opacity: .45;}
+      .cls-16 {stroke-width:5px;opacity: .55;}
+      .cls-17, .cls-18 {stroke-width:3px;opacity: .75;stroke:rgb(255,200,200);}
+      .cls-18 {stroke-width:2px;opacity: .8;}
+        </style>
+      </defs>
+      <title>Untitled-3</title>
+      <ellipse class="cls-10 ellipse01" cx="384" cy="237.25" rx="35" ry="23.5"/>
+      <ellipse class="cls-10 ellipse02" cx="42.5" cy="242.25" rx="42.5" ry="21.5"/>
+      <ellipse class="cls-10 ellipse03" cx="358.32" cy="212.5" rx="39.18" ry="28.88"/>
+      <ellipse class="cls-10 ellipse04" cx="174.5" cy="152.25" rx="38.5" ry="31.5"/>
+      <ellipse class="cls-10 ellipse05" cx="127" cy="188.75" rx="34" ry="31"/>
+      <ellipse class="cls-10 ellipse06" cx="153.5" cy="233.75" rx="39.5" ry="25"/>
+      <ellipse class="cls-10 ellipse07" cx="54.5" cy="221.25" rx="30.5" ry="18.5"/>
+      <ellipse class="cls-10 ellipse08" cx="323.94" cy="178.8" rx="38.01" ry="37.55"/>
+      <circle class="cls-10 ellipse09" cx="182" cy="191.75" r="33"/>
+      <circle class="cls-10 ellipse10" cx="214.5" cy="135.25" r="32.5"/>
+      <ellipse class="cls-10 ellipse11" cx="239" cy="167.25" rx="36" ry="29.5"/>
+      <ellipse class="cls-10 ellipse12" cx="217" cy="220.75" rx="49" ry="36"/>
+      <path class="cls-2" d="M460,495c19.5-1,49.5-6.5,58.5-24,0-2-16.5-43.5-16.5-43.5v-17c-2.5-23-20.42-30.43-30.5-31.5h-23c-10.08,1.07-28,8.5-30.5,31.5v17S401.5,469,401.5,471C410.5,488.5,440.5,494,460,495Z" transform="translate(-244.5 -378.75)"/>
+      <circle class="cls-3" cx="190.75" cy="98" r="3.25"/>
+      <circle class="cls-3" cx="240.5" cy="98.25" r="3.25"/>
+      <rect class="cls-3" x="207.25" y="81" width="6" height="16.5"/>
+      <rect class="cls-3" x="217.75" y="81" width="6" height="16.5"/>
+      <polygon class="cls-3" points="198.75 97.5 203.25 97.5 203.25 85.5 198.75 89.5 198.75 97.5"/>
+      <polygon class="cls-3" points="232.25 97.5 227.75 97.5 227.75 85.5 232.25 89.5 232.25 97.5"/>
+      <path class="cls-3" d="M460.25,443.75h0s-4.5-.5-6.5,5v7.5h12.5v-7.5A5.86,5.86,0,0,0,460.25,443.75Z" transform="translate(-244.5 -378.75)"/>
+      <path class="cls-3" d="M433.75,439.75h19c2.5-.5,3-2,3-2v-8a9.36,9.36,0,0,0-7.5-6.5h-6.5c-8,2.5-9,5-10.5,9.5v4A5.17,5.17,0,0,0,433.75,439.75Z" transform="translate(-244.5 -378.75)"/>
+      <path class="cls-3" d="M485.75,439.75h-19c-2.5-.5-3-2-3-2v-8a9.36,9.36,0,0,1,7.5-6.5h6.5c8,2.5,9,5,10.5,9.5v4A5.17,5.17,0,0,1,485.75,439.75Z" transform="translate(-244.5 -378.75)"/>
+      <path class="cls-4" d="M409.75,470.25s11.5-38.5,21-49.5c15.5-12,23.25-1.25,29.75.75,6.25-1.25,14.75-12.75,27.75-1.25,7,3.5,21.5,50,21.5,50" transform="translate(-244.5 -378.75)"/>
+      <path class="cls-2" d="M498.14,487.84S579.53,598.9,558,631.22c-42.5,1.28-98,0-98,0s-42.5.28-98,0c-21.62-32.41,59.86-143.88,59.86-143.88" transform="translate(-244.5 -378.75)"/>
+      <rect class="cls-5" x="411.19" y="562.16" width="10" height="35" transform="translate(-386.36 -243.84) rotate(-15.77)"/>
+      <rect class="cls-5" x="413.99" y="594.93" width="15" height="7" transform="translate(-391.26 -241.7) rotate(-15.77)"/>
+      <rect class="cls-5" x="405.16" y="560.36" width="12" height="3" transform="translate(-381.71 -245.88) rotate(-15.77)"/>
+      <line class="cls-11" x1="166" y1="180.97" x2="128" y2="64.53"/><line class="cls-12" x1="166" y1="180.97" x2="128" y2="64.53"/><line class="cls-13" x1="166" y1="180.97" x2="128" y2="64.53"/><line class="cls-14" x1="166" y1="180.97" x2="128" y2="64.53"/><line class="cls-15" x1="166" y1="180.97" x2="128" y2="64.53"/><line class="cls-16" x1="166" y1="180.97" x2="128" y2="64.53"/><line class="cls-17" x1="166" y1="180.97" x2="128" y2="64.53"/><line class="cls-18" x1="166" y1="180.97" x2="128" y2="64.53"/>
+      <ellipse class="cls-7" cx="412.05" cy="579.03" rx="12.5" ry="9.06" transform="translate(-386.34 -244.99) rotate(-15.77)"/>
+      <ellipse class="cls-7" cx="250" cy"579" rx="8" ry="13" transform="translate(0 -244)"></ellipse>
+      <ellipse class="cls-10 ellipse13" cx="92" cy="237.25" rx="35" ry="22.5"/>
+      <ellipse class="cls-10 ellipse14" cx="324.96" cy="229.53" rx="30.41" ry="27.15"/>
+      <ellipse class="cls-10 ellipse15" cx="275.84" cy="176.88" rx="36.84" ry="28.88"/>
+      <ellipse class="cls-10 ellipse16" cx="281.67" cy="227.7" rx="43.27" ry="30.62"/>
+      <ellipse class="cls-10 ellipse17" cx="83" cy="208.25" rx="44" ry="31.5"/>
+    </svg>
+      
+    </div>
+    
+    <div class="row justify-content-center pl-3 pr-4 p-md-0">
+      <div class="col-12">
+        <h3 class="slogan">Beragyogjuk a sötét oldalt.</h3>
+        <h4 class="little-slogan">Vader már neonra váltott, Ön mire vár?</h4>
+      </div>
+    </div>
+    
+    <div class="row row-footer justify-content-center align-items-center p-3 pb-0 m-0 mt-5">
+      <div class="col-12 mb-2"><p class="footer-text">Copyright © <span id="year"></span>. Decorlight Kft. All rights reserved.</p></div>
+      <div class="col-12"><p class="footer-text">Made by <a class="footer-link" href="" target="_blank">Zsombor Bérces</a>.</p></div>
+    </div>
+
+    <!-- Optional JavaScript --> 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <script>
+            window.onload = function() {
+
+        var num = 1;
+    
+        $('.termekek').on('click', function() { 
+      
+      if (num == 1) {
+        $(".termek").slideDown(300, function() {
+        $('.termek').addClass('termek-active'); 
+        $('.termekek').addClass('menu-btn-active');
+        });
+        num++;
+      } else {
+        $('.termek').slideUp(300, function () {
+        $('.termek').removeClass('termek-active');
+        $('.termekek').removeClass('menu-btn-active');
+        });
+        num--;
+      }
+    });
+              
+        var currentYear = (new Date).getFullYear();
+        $(document).ready(function() {
+        $("#year").text( (new Date).getFullYear() );
+        });
+    }
+    </script>
+  </body> 
+</html>

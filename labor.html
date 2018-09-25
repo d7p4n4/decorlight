@@ -7,9 +7,7 @@
     <!-- Bootstrap CSS --> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
     <!-- font fam -->
-    <link href="https://fonts.googleapis.com/css?family=Baloo|Bungee+Inline|Cabin+Sketch|Monoton|Share+Tech+Mono|Space+Mono|Zilla+Slab+Highlight" rel="stylesheet">
-    
-    <link href="https://fonts.googleapis.com/css?family=Play|Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Monoton" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>    
     
@@ -262,8 +260,15 @@
       
       .laborText, .gallery-path {
         color: white;
-        font-family: play;
-        line-height: 1.3rem;
+        font-family: lora;
+        font-size: 1rem;
+        line-height: 1.2rem;
+      }
+      
+      @media (min-width: 768px) {
+        .laborText, .gallery-path {
+          line-height: 1.4rem;
+        }
       }
       
       .img-bemutato {
@@ -392,7 +397,7 @@
                 <li class="innermenu"><a href="neon.html">Neon</a></li>
                 <li class="innermenu"><a href="labor.html">Labor</a></li>
                 <li class="innermenu"><a href="diszek.html">Dísztárgyak</a></li>
-                <li class="innermenu"><a href="reklamtabla.html">Reklámtáblák</a></li>
+                <li class="innermenu"><a href="reklamtablak.html">Reklámtáblák</a></li>
               </ul>
             </div>
           </div>
@@ -424,7 +429,7 @@
       <div class="col-10 col-lg-5 m-2 pb-0 pt-0 align-self-center" style="text-align: center;">
         <img class="img-fluid img-bemutato" src="assets/laborreferencia/labor-eszkozok-02.jpg" alt="üvegtechnikai labor eszközök">
         <div class="row justify-content-center mt-4">
-          <div class="col-auto"><p class="gallery-path"><i class="fas fa-images"></i> További képek a <a class="gallery-link" href="gallery.html">galériában</a>.</p></div>
+          <div class="col-auto"><p class="gallery-path"><i class="fas fa-images"></i> További képek a <a class="gallery-link" href="galeria.html">galériában</a>.</p></div>
         </div>
       </div>
     </div>

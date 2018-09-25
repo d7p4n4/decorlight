@@ -7,9 +7,7 @@
     <!-- Bootstrap CSS --> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
     <!-- font fam -->
-    <link href="https://fonts.googleapis.com/css?family=Baloo|Bungee+Inline|Cabin+Sketch|Monoton|Share+Tech+Mono|Space+Mono|Zilla+Slab+Highlight" rel="stylesheet">
-    
-    <link href="https://fonts.googleapis.com/css?family=Play|Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Monoton" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>    
     
@@ -269,9 +267,15 @@
       
       .neonText, .gallery-path {
         color: white;
-        font-family: play;
+        font-family: lora;
         font-size: 1rem;
-        line-height: 1.3rem;
+        line-height: 1.2rem;
+      }
+      
+      @media (min-width: 768px) {
+        .neonText, .gallery-path {
+          line-height: 1.4rem;
+        }
       }
       
       .img-bemutato {
@@ -407,7 +411,7 @@
       <div class="col-10 col-lg-5 m-2 pt-0 pb-0 align-self-center">
         <img class="img-fluid img-bemutato" src="assets/neonreferencia/neon-cso-neon-reklam-neon-felirat-neon-dekoracio-fagylalt.jpg" alt="Neon dekoráció, neon reklámtábla fagylalt logo">
         <div class="row justify-content-center mt-4">
-          <div class="col-auto"><p class="gallery-path"><i class="fas fa-images"></i> További képek a <a class="gallery-link" href="gallery.html">galériában</a>.</p></div>
+          <div class="col-auto"><p class="gallery-path"><i class="fas fa-images"></i> További képek a <a class="gallery-link" href="galeria.html">galériában</a>.</p></div>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 <!doctype html> 
-<html lang="en">
+<html lang="hu">
   <head>
     <!-- Required meta tags --> 
     <meta charset="utf-8"> 
@@ -7,44 +7,35 @@
     <!-- Bootstrap CSS --> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
     <!-- font fam -->
-    <link href="https://fonts.googleapis.com/css?family=Baloo|Bungee+Inline|Cabin+Sketch|Monoton|Share+Tech+Mono|Space+Mono|Zilla+Slab+Highlight" rel="stylesheet">
-    
-    <link href="https://fonts.googleapis.com/css?family=Play|Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Monoton" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>    
     
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <title>Decorlight</title> 
-  </head> 
-  
-  <body> 
-    
-    <!-- main styles -->
+    <title>Néhány általunk készített neon reklám, neon dekoráció, üveg dísztárgyak, és pár labortechnikai eszköz.</title> 
 
     <style>
-      
       html {
-        font-size: 10px;
+        font-size: 16px;
         padding: 0;
         margin: 0;
+        width: 100%;
       }
       
-      @media (min-width: 420px) {
-        html {
-          font-size: 13px;
-        }
-      }
-      
-      @media (min-width: 768px) {
-        html {
-          font-size: 16px;
-        }
-      }
-      
-      @media (min-width: 1200px) {
+      @media (min-width: 992px) {
         html {
           font-size: 18px;
         }
+      }
+    
+     a {
+        text-decoration: none;
+        color: inherit;
+      }
+      
+      a:hover {
+        text-decoration: none;
+        color: inherit;
       }
       
       body {
@@ -53,12 +44,13 @@
         margin: 0;
         width: 100%;
         height: 100%;
+        background-image: repeating-linear-gradient(-55deg, rgb(0,0,0), rgb(0,0,0) -5px, rgb(20,20,20) .5px, rgb(20,20,20) 50px);
       }
       
       header {
         background: rgba(0,0,0,.5);
         padding-bottom: 2rem;
-        margin-top: -1rem;
+        margin-top: -1.5rem;
       }
       
       a {
@@ -75,102 +67,41 @@
         font-family: clip;
         src: url("fonts/clip.regular.ttf");
       }
-    </style>
-    
-    <!-- ---------------------------------------------------------------------flags---------------------------------------------------- -->
-   
-    <header>
-    
-      <style>
-.flag {
-  width: 100%;
-  height: 3.6rem;
-}
-        .german {
-  filter: opacity(.5);
-}
-.german:hover {
-  filter: opacity(1);
-}
-.upperRed, .hunRed {
-  background: red;
-  width: 100%;
-  height: 0.5rem;
-  border-radius: 99999px;
-  box-shadow: 0 0 3px red, 0 0 7px red, 0 0 15px red, 0 0 25px red;
-}
-        
-        .yellow {
-          background: yellow;
-                    margin-top: .25rem;
-  width: 100%;
-  height: 0.5rem;
-  border-radius: 99999px;
-  box-shadow: 0 0 3px yellow, 0 0 7px yellow, 0 0 15px yellow, 0 0 25px yellow;
-        }
-        
-        .red {
-            background: red;
-  width: 100%;
-  height: 0.5rem;
-  border-radius: 99999px;
-  margin-top: 0.25rem;
-  box-shadow: 0 0 3px red, 0 0 7px red, 0 0 15px red, 0 0 25px red;
-        }
-        
-        .black {
-  height: 0.5rem;
-  background: rgb(50,50,50);
-  border-radius: 99999px;
-  box-shadow: 0 0 3px rgb(70,70,70), 0 0 7px rgb(85,85,85), 0 0 15px rgb(100,100,100), 0 0 25px grey;
-        }
-        
-.germanWhite, .hunWhite {
-  background: white;
-  width: 100%;
-  height: 0.5rem;
-  margin-top: 0.25rem;
-  border-radius: 99999px;
-  box-shadow: 0 0 3px white, 0 0 7px white, 0 0 15px white, 0 0 25px white;
-}
-.lowerRed, .green {
-  margin-top: .25rem;
-  height: 0.5rem;
-  background: red;
-  border-radius: 99999px;
-  box-shadow: 0 0 3px red, 0 0 7px red, 0 0 15px red, 0 0 25px red;
-}
-.green {
-  background: green;
-  box-shadow: 0 0 3px green, 0 0 7px green, 0 0 15px green, 0 0 25px green;
-}
-      </style>
       
-      <div class="row justify-content-left mt-3 ml-2">
-        <div class="col-3 col-sm-2 col-lg-2 col-xl-1 p-4">
-          <div class="flag german">
-            <a href="index-ger.html">
-              <div class="black"></div>
-              <div class="red"></div>
-              <div class="yellow"></div>
-            </a>
-          </div>
-        </div> 
-    
-      <div class="col-3 col-sm-2 col-lg-2 col-xl-1 p-4">
-        <div class="flag hungarian">
-          <a href="index.html">
-            <div class="hunRed"></div>
-            <div class="hunWhite"></div>
-            <div class="green"></div>
-          </a>
-        </div>    
-      </div>
-    </div>
-    
-    <!-- -------------------------------------------------------header------------------------------------------------- -->
-    
-    <style>
+      .de-flag,
+      .en-flag,
+      .hun-flag {
+        border-radius: 50%;
+        width: 100%;
+        max-width: 2rem;
+        position: relative;
+        left: calc(50% - 1rem);
+      }
+      
+      .de-flag,
+      .en-flag {
+        opacity: .5;
+        transition: all .3s ease;
+      }
+      
+      .hun-flag {
+        transition: all .3s ease;
+      }
+      
+      .de-flag:hover,
+      .en-flag:hover,
+      .hun-flag:hover {
+        opacity: 1;
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+
+      
+      @font-face {
+        font-family: clip;
+        src: url("fonts/clip.regular.ttf");
+      }
+
       @-webkit-keyframes turnonlights {
         0%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
         .1%        { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 17px orange, 0 0 38px orange, 0 0 50px orange, 0 0 70px orange}
@@ -202,7 +133,7 @@
       
       .main-title {
         font-family: Monoton;
-        font-size: 4rem;
+        font-size: 2.5rem;
         -webkit-animation-name: turnonlights;
         -webkit-animation-duration: 30s;
         -webkit-animation-fill-mode: both;
@@ -219,7 +150,7 @@
       
       .lower-title {
         font-family: clip;
-        font-size: 1.5rem;
+        font-size: 1rem;
         text-align: center;
         color: darkgray;
         font-weight: bold;
@@ -231,20 +162,7 @@
       .row-title {
         margin-top: -1rem;
       }
-    </style>
-    
-    <div class="row row-title justify-content-center align-items-center">
-      <div class="col-12"><p class="main-title">Decorlight</p></div>
-    </div>
-    
-    <div class="row justify-content-center align-items-center">
-      <div class="col-12"><p class="lower-title">A napnál is világosabb</p></div>
-    </div>
-      
-    </header>
-    <!-- --------------------------------------------------------------navbar---------------------------------------------------------- -->
-    
-    <style>
+
       @font-face {
         font-family: clip;
         src: url("fonts/clip.regular.ttf");
@@ -305,6 +223,11 @@
         margin-top: -.5rem;
         margin-bottom: .75rem;
         display: none;
+        text-align: center;
+      }
+      
+      .ul {
+        padding: 0;
       }
       
       .innermenu {
@@ -312,6 +235,8 @@
         font-family: neon;
         cursor: pointer;
         font-size: 1.3rem;
+        border-bottom: .025rem solid rgba(255,255,255,.15);
+        margin-bottom: .5rem;
       }
       
       .innermenu:hover {
@@ -329,53 +254,7 @@
       .termek-active {
         display: block;
       }
-    </style>
-    
-    <div class="row justify-content-center mt-5">
-      <div class="col-12 col-md-3"><p class="menu-btn"><a href="rolunk.html">Rólunk</a></p></div>            
-      <div class="col-12 col-md-3 mb-0 pb-0"><p class="menu-btn termekek">Termékek</p>
-        <div class="col-12 termek">      
-          <div class="row justify-content-center mt-0 mb-3">
-            <div class="col-6 col-md-12 col-innermenu pt-3 mt-0">
-              <ul> 
-                <li class="innermenu"><a href="neon.html">Neon</a></li>
-                <li class="innermenu"><a href="labor.html">Labor</a></li>
-                <li class="innermenu"><a href="disz.html">Dísztárgyak</a></li>
-                <li class="innermenu"><a href="tabla.html">Reklámtáblák</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-3"><p class="menu-btn menu-btn-active"><a href="gallery.html">Galéria</a></p></div>
-      <div class="col-12 col-md-3"><p class="menu-btn contact"><a href="contact.html">Kapcsolat</a></p></div>
-    </div>
-    
-    <style>
-      .col-innermenu {
-        background-color: rgba(0,0,0,.5);
-        border-radius: 0 0 1rem 1rem;
-      }
-      
-      .innermenu {
-        color: dimgray;
-        font-family: neon;
-        cursor: pointer;
-      }
-      
-      .innermenu:hover {
-        -webkit-animation-name: turnonlightsblue;
-        -webkit-animation-duration: 18s;
-        -webkit-animation-fill-mode: both;
-        -webkit-animation-timing-function: steps(2, start);
-        -webkit-animation-iteration-count: infinite;   
-      }
-    </style>
-    
-    <!-- -----------------------------------------------main slide------------------------------------------------------- -->
-    
-    <style>      
-      
+
       .col-img {
         text-align: center;
         margin-bottom: 0rem;
@@ -401,6 +280,7 @@
       
       .gallery-pic:hover {
         transform: scale(1.2);
+        cursor: pointer;
       }
       
       .gallery-btn {
@@ -427,108 +307,7 @@
       .active-layer {
         display: block;
       }
-  
-    </style>
 
-    <div class="row justify-content-center m-5 mb-0 row-img">
-      <div class="col-10 col-img col-pic1">
-          <img src="assets/neonreferencia/bull.jpg" alt="" class="img-fluid main-pics">
-      </div>
-    </div>
-    
-    <div class="row justify-content-center mt-5">
-      <div class="col-12">
-        <p class="gallery-btn" rel="disz-layer">Dísztárgyak</p>
-      </div>
-    </div>
-    
-    <div class="disz-layer">
-    <div class="row row-gallery mt-5 mb-5 ml-3 mr-3 justify-content-center p-3 pt-4">
-      <div class="col-3 col-lg-1 m-1 mb-3"><img src="assets/diszreferencia/disz.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3"><img src="assets/diszreferencia/disz1.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3"><img src="assets/diszreferencia/disz2.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/diszreferencia/disz3.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/diszreferencia/disz4.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3"><img src="assets/diszreferencia/disz5.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3"><img src="assets/diszreferencia/disz6.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3"><img src="assets/diszreferencia/disz7.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/diszreferencia/disz8.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/diszreferencia/elf.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/diszreferencia/rose.jpg" alt="" class="img-fluid gallery-pic"></div>
-      </div>
-    </div>
-      
-      
-    <div class="row justify-content-center mt-1">
-      <div class="col-12">
-        <p class="gallery-btn" rel="neon-layer">Neon</p>
-      </div>
-    </div>
-    
-    <div class="neon-layer">
-    <div class="row row-gallery mt-5 mb-5 ml-3 mr-3 justify-content-center p-3 pt-4">
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/baby.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/babyoff.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/bigcup.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/Bistro.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/butterflies.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/caffe.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/doors.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/flower.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/ice-cream.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/lofthome.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/made.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/mattoni.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/open.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/pool.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/rounds.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/seacret.png" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/stars.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/tandart.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/K%C3%A9k%20lepke.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/fortito.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/taska.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/dive.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/DULUX_dekoracio.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/Glasmotor%20(1).JPG" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/gm-klub.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/gm.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/bull.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/Sophie.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/srof-pub.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/bistrobar.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/sale.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/sale2.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/out-of.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/bistro2.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/sun-house.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/zgrtty.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/elle.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/arena.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/srof-pub2.jpg" alt="" class="img-fluid gallery-pic"></div>
-      </div>
-      </div>
-    
-    <div class="row justify-content-center mt-1">
-      <div class="col-12">
-        <p class="gallery-btn" rel="labor-layer">Labortermékek</p>
-      </div>
-    </div>
-    
-    <div class="labor-layer">
-    <div class="row row-gallery mt-5 mb-5 ml-3 mr-3 justify-content-center p-3 pt-4">
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/laborreferencia/labor1.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/laborreferencia/labor2.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/laborreferencia/labor3.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/laborreferencia/labor4.jpg" alt="" class="img-fluid gallery-pic"></div>
-      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/laborreferencia/labor5.jpg" alt="" class="img-fluid gallery-pic"></div>
-    </div>
-      </div>
-    
-    <!-- footer -->
-    
-    <style>
-      
       .row-footer {
         background: rgba(0,0,0,.5);
         position: relative;
@@ -562,10 +341,177 @@
         -webkit-animation-iteration-count: infinite;        
         text-decoration: none;
       }
+
+      .row {
+        margin-right: 0px;
+        margin-left: 0;
+      }
+
+      @media (min-width: 992px) {
+        .main-title {
+          font-size: 3rem;
+        }
+        
+        .lower-title {
+          font-size: 1.5rem;
+        }
+        
+        .diszText {
+          line-height: 1.6rem;
+        }
+      }
     </style>
+  </head>
+  <body>
+   
+    <header>
+      
+      <div class="row justify-content-start mt-4 ml-2 mb-4"> 
+        <div class="col-1 p-1">
+          <a href="index.html">
+            <img class="img-fluid hun-flag" src="assets/flag-hun.png" alt="magyar zászló" />
+          </a>
+        </div>
+        
+        <div class="col-1 p-1">
+          <a href="de/menu.html">
+            <img class="img-fluid de-flag" src="assets/flag-de.png" alt="német zászló" />
+          </a>
+        </div> 
+
+        <div class="col-1 p-1">
+          <a href="en/menu.html">
+            <img class="img-fluid en-flag" src="assets/flag-en.png" alt="angol zászló" />
+          </a>
+        </div>
+    </div>
+
+    <div class="row row-title justify-content-center align-items-center">
+      <div class="col-12"><p class="main-title">Decorlight</p></div>
+    </div>
+    
+    <div class="row justify-content-center align-items-center">
+      <div class="col-12"><p class="lower-title">A napnál is világosabb</p></div>
+    </div>
+      
+    </header>
+    
+    <div class="row justify-content-center mt-5">
+      <div class="col-12 col-md-3"><p class="menu-btn"><a href="rolunk.html">Rólunk</a></p></div>            
+      <div class="col-12 col-md-3 mb-0 pb-0"><p class="menu-btn termekek">Termékek</p>
+        <div class="col-12 termek">      
+          <div class="row justify-content-center mt-0 mb-3">
+            <div class="col-8 col-md-12 col-innermenu pt-3 mt-0">
+              <ul class="ul"> 
+                <li class="innermenu"><a href="neon.html">Neon</a></li>
+                <li class="innermenu"><a href="labor.html">Labor</a></li>
+                <li class="innermenu"><a href="diszek.html">Dísztárgyak</a></li>
+                <li class="innermenu"><a href="reklamtablak.html">Reklámtáblák</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3"><p class="menu-btn menu-btn-active"><a href="galeria.html">Galéria</a></p></div>
+      <div class="col-12 col-md-3"><p class="menu-btn contact"><a href="kapcsolat.html">Kapcsolat</a></p></div>
+    </div>
+
+    <div class="row justify-content-center m-5 mb-0 row-img" id="big-img">
+      <div class="col-10 col-img col-pic1">
+          <img src="assets/neonreferencia/neon-cso-neon-dekoracio-neon-bika-voros.jpg" alt="vörös neon bika, neon reklám" class="img-fluid main-pics">
+      </div>
+    </div>
+    
+    <div class="row justify-content-center mt-5">
+      <div class="col-12">
+        <p class="gallery-btn" rel="disz-layer">Dísztárgyak</p>
+      </div>
+    </div>
+    
+    <div class="disz-layer">
+    <div class="row row-gallery mt-5 mb-5 ml-3 mr-3 justify-content-center p-3 pt-4">
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/diszreferencia/uveg-disz-mano.jpg" alt="színes üveg manó, üveg dísztárgy" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/diszreferencia/uveg-disz-rozsa.jpg" alt="színes üveg rózsa, virág, üveg dísztárgy" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/diszreferencia/uveg-disz-02.jpg" alt="színes, üvegből készült vázák, kaspók" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/diszreferencia/uveg-disz-kaspo.jpg" alt="színes üvegből készült virág váza, kaspó" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3"><img src="assets/diszreferencia/uveg-disz-03.jpg" alt="színezett üveg dísztárgy" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3"><img src="assets/diszreferencia/uveg-disz-arc.jpg" alt="színes üveg arc, üveg dísztárgy" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/diszreferencia/uveg-disz-szolo-level.jpg" alt="színes üveg szőlő levele közelről, üveg dísztárgy" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/diszreferencia/uveg-disz-szolo.jpg" alt="színes üveg szőlő, üveg dísztárgy" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/diszreferencia/uveg-disz-szolo-02.jpg" alt="színes üveg szőlő, üveg dísztárgy" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/diszreferencia/uveg-disz-cseresznye.jpg" alt="színes üveg cseresznye, meggy, üvegdísztárgy" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/diszreferencia/uveg-disz-cseresznye-02.jpg" alt="színes üvegből készült cseresznye, meggy, üveg dísz" class="img-fluid gallery-pic"></div>
+      </div>
+    </div>
+      
+      
+    <div class="row justify-content-center mt-1">
+      <div class="col-12">
+        <p class="gallery-btn" rel="neon-layer">Neon</p>
+      </div>
+    </div>
+    
+    <div class="neon-layer">
+    <div class="row row-gallery mt-5 mb-5 ml-3 mr-3 justify-content-center p-3 pt-4">
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-rozsaszin.jpg" alt="Bolti neon dekoráció, neon felirat" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-reklam-rozsaszin.jpg" alt="bolti neon dekoráció, neon felirat közelről" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-kek-neon-reklam.jpg" alt="szabadtéri neon dekoráció, neon felirat" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-piros-neon-reklam.jpg" alt="elkészült neon reklám felirat" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-feny-neon-reklam-neon-logo.jpg" alt="szabadtéri neon reklám, logóval és neon felirat" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-tarto-betuk.jpg" alt="neoncsöveket tartó betűk" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-reklam-kek-feher.jpg" alt="beltéri neoncső dekoráció, neon reklám" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-logo-neon-dekoracio-neon-pillango.jpg" alt="pillangó figura színes, világító neoncsövekből, neon dekoráció" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-reklam-neon-fenyjatek-arena-plaza.jpg" alt="aréna pláza neon fényjátéka, neon dekoráció, neon reklám" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-ceger-neon-reklam-srof-pub.jpg" alt="sróf pub cégére neoncsövekből, neon logó, neon reklám" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-ceger-neon-reklam-srof-pub-02.jpg" alt="sróf pub neonnal készült cégére a helyén, neon logó, neon reklám" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-reklam-neon-disz-piros-dekoracio.jpg" alt="neltéri neon dekoráció, neon felirat" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-reklam-szoveg-zold.jpg" alt="neon reklám felirat, színes neoncsövekből" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-reklam-ceger-dive.jpg" alt="kültéri neon cégér, logóval és neon felirattal" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-dekoracio-dulux.jpg" alt="neon dekoráció, neon fényjáték a dulux áruházában" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-dekoracio-piros-neon-motor.jpg" alt="neon dekoráció, neoncsövekből készült, világító dísz, motor" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-reklam-neon-ceger-gm.jpg" alt="kültéri neon világítás, neon reklám, neon logó és fellirat" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-reklam-neon-ceger-gm-02.jpg" alt="szabadtéri neon cégér, neon logó" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-dekoracio-neon-bika-voros.jpg" alt="vörös bika neoncsövekből, neon dekoráció" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-dekoracio-neon-szoveg-sophie.jpg" alt="több színű, beltéri neon felirat" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-reklam-neon-ceger-klikk-bistro.jpg" alt="szabadtéri cégér, neon fénnyel, neon reklám" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-reklam-neon-szoveg-felirat-tandart.jpg" alt="neon reklám felirat" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-dekoracio-virag.jpg" alt="színes, virág alakú neon dísz, neoncsövekből hajlítva" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-dekoracio-korok.jpg" alt="mennyezeti neonvilágítás" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-reklam-tabla-felirat-baby.jpg" alt="neon reklámtábla, felirattal és logóval, kikapcsolt állapotban" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-reklam-tabla-felirat-baby-vilagit.jpg" alt="neon reklámtábla, felirattal és logóval, bekapcsolt állapotban" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-dekoracio-neon-bogre.jpg" alt="kültéri neon reklám, neon logó, neonvilágítás gőzölgő csésze alakban" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-dekoracio-neon-reklam-neon-pillango-szines.jpg" alt="pillangó alakú, színes neon dekoráció" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-dekoracio-neon-reklam-ablakban.jpg" alt="neonvilágítás, neon reklám, ablak dekoráció neoncsövekből" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-dekoracio-neon-csillagok.jpg" alt="csillag alakú neonvilágítás" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-felirat-neon-feny-mattoni.jpg" alt="színes neon reklám felirat" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-open-felirat.jpg" alt="színes, neoncsövekből készült reklám felirat" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-felirat-neon-feny-seacret.png" alt="színes neon felirat, neon reklám" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-felirat-lofthome.jpg" alt="színes neon felirat, neon reklám" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-felirat-szoveg-made-in-hungary.jpg" alt="vörös neon felirat, neon reklám" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-reklam-neon-felirat-neon-dekoracio-fagylalt.jpg" alt="neon reklámtábla, logóval és felirattal" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-reklam-neon-logo-neon-ceger-bogre.jpg" alt="színes neon reklám, neon dekoráció, gőzölgő bögre alakban" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/neonreferencia/neon-cso-neon-felirat-szoveg-bistro.jpg" alt="színes neon reklám felirat" class="img-fluid gallery-pic"></div>
+      </div>
+      </div>
+    
+    <div class="row justify-content-center mt-1">
+      <div class="col-12">
+        <p class="gallery-btn" rel="labor-layer">Labortermékek</p>
+      </div>
+    </div>
+    
+    <div class="labor-layer">
+    <div class="row row-gallery mt-5 mb-5 ml-3 mr-3 justify-content-center p-3 pt-4">
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/laborreferencia/labor-eszkozok.jpg" alt="" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/laborreferencia/labor-eszkozok-02.jpg" alt="" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/laborreferencia/labor-eszkozok-03.jpg" alt="" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/laborreferencia/labor-eszkozok-04.jpg" alt="" class="img-fluid gallery-pic"></div>
+      <div class="col-3 col-lg-1 m-1 mb-3 align-self-center"><img src="assets/laborreferencia/labor-eszkozok-05.jpg" alt="" class="img-fluid gallery-pic"></div>
+    </div>
+      </div>
     
     <div class="row row-footer justify-content-center align-items-center p-3 pb-0 m-0 mt-5">
-      <div class="col-12 mb-2"><p class="footer-text">Copyright © <span id="year"></span>. Decorlight Kft. All rifhts reserved. Hallgas Vendel 06-70-608-7750, Hallgas Mihály 06-70-608-7748 Email: info@decorlight.hu</p></div>
+      <div class="col-12 mb-2"><p class="footer-text">Copyright © <span id="year"></span>. Decorlight Kft. All rights reserved.</p></div>
       <div class="col-12"><p class="footer-text">Made by <a class="footer-link" href="" target="_blank">Zsombor Bérces</a>.</p></div>
     </div>
     
@@ -605,6 +551,9 @@
           var $picSrc = $(this).attr("src");
           
           $(".main-pics").attr('src', $picSrc);
+          $('html, body').animate({
+            scrollTop: $("#big-img").offset().top
+                }, 500);
         })
               
         var $num = 1;

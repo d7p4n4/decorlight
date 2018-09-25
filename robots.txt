@@ -1,0 +1,15 @@
+User-agent: *
+
+Disallow: /kapcsolat.html/
+Noindex: /kapcsolat.html/
+
+Disallow: /index.html/
+Noindex: /index.html/
+
+Disallow: /de/kapcsolat.html/
+Noindex: /de/kapcsolat.html/
+
+Disallow: /de/index.html/
+Noindex: /de/index.html/
+
+Sitemap: https://decorlight.hu/sitemap.xml
